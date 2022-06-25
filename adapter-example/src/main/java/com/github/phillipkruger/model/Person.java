@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Person {
-    //@AdaptToScalar(Scalar.String.class)
+    @AdaptToScalar(Scalar.String.class)
     public int id;
     public String locale;
     public String title;
@@ -14,10 +14,10 @@ public class Person {
     public String surname;
     public Gender gender;
     public LocalDate birthDate;
-    //@AdaptWith(AddressAdapter.class)
+    @AdaptWith(AddressAdapter.class)
     public Address address;
     public List<String> emailAddresses;
-    //@AdaptToScalar(Scalar.String.class)
+    @AdaptToScalar(Scalar.String.class)
     public List<Phone> phoneNumbers;
     public URL website;
     public List<Relation> relations;
